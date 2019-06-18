@@ -11,4 +11,5 @@ repository = InMemoryRepository(data)
 use_case = UserList(repository)
 result = use_case.execute()
 
+# cli know dmain. is that ok ?
 print ([user.to_dict() for user in result])
