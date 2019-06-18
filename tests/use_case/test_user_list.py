@@ -11,10 +11,13 @@ def domain_users():
         User('foge','foge','foge@example.com')
     ]
 
+def test_execute(domain_user):
+    repository = mock.Mock()        
+    repository.list.return_value = domain_users
 
-def test_execute(domain_users):
-    repository = mock.Mock()
-    repository.return_value = domain_users
+
     user_list = UserList(repository)
     result = user_list.execute()
+
+    repository.list.assert_called_with()
     assert domain_users == result
