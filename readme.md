@@ -1,6 +1,14 @@
 # Leaning Note
 ## Layers
-
+### Entity
+### Use Case
+#### Interactor
+#### Input Port
+- Request Object
+#### Output Port
+- Response Object
+### Interface Adaptrer
+### External Interface
 ## Data Frow and Dependency
 - [referenace](https://proandroiddev.com/clean-architecture-data-flow-dependency-rule-615ffdd79e29)
 ### DataFrom

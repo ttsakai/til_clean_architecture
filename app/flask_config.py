@@ -1,5 +1,5 @@
 class Config:
-    """Base Configuration"""    
+    """Base Configuration"""
 
 class ProdConfig(Config):
     """Production Configuration"""
@@ -9,7 +9,7 @@ class ProdConfig(Config):
 class DevConfig(Config):
     """Development Configuration"""
     ENV = "development"
-    DEBUG = True
+    DEBUG = 1
 
 class TestConfig(Config):
     """Test Configuration"""

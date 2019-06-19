@@ -1,6 +1,5 @@
-import json 
+import json
 from flask import Blueprint, Response
-
 
 blueprint = Blueprint('user',__name__)
 

@@ -18,7 +18,7 @@ def test_get(mock_use_case, client):
     http_response = client.get('/users')
     assert json.loads(http_response.data.decode('utf-8')) == [user_dict]
     mock_use_case().execute.assert_called_with()
-    assert http_response.statsu_code == 200
-    assert http_response.mime_type == 'application/json'
+    assert http_response.status_code == 200
+    assert http_response.mimetype == 'application/json'
 
 
